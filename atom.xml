@@ -6,7 +6,7 @@
   <link href="https://no9ong.github.io/atom.xml" rel="self"/>
   
   <link href="https://no9ong.github.io/"/>
-  <updated>2022-10-20T12:36:29.448Z</updated>
+  <updated>2023-10-29T08:45:56.335Z</updated>
   <id>https://no9ong.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker创建常用容器</title>
+    <link href="https://no9ong.github.io/2023/10/29/docker%E5%88%9B%E5%BB%BA%E5%B8%B8%E7%94%A8%E5%AE%B9%E5%99%A8/"/>
+    <id>https://no9ong.github.io/2023/10/29/docker%E5%88%9B%E5%BB%BA%E5%B8%B8%E7%94%A8%E5%AE%B9%E5%99%A8/</id>
+    <published>2023-10-29T08:42:00.000Z</published>
+    <updated>2023-10-29T08:45:56.335Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Docker创建mysql57"><a href="#Docker创建mysql57" class="headerlink" title="Docker创建mysql57"></a>Docker创建mysql57</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">docker run -d --name mysql -v <span class="hljs-regexp">/data/my</span>sql<span class="hljs-regexp">/data:/</span>var<span class="hljs-regexp">/lib/my</span>sql -e MYSQL_ROOT_PASSWORD=anjv123 -p <span class="hljs-number">3306</span>:<span class="hljs-number">3306</span> mysql:<span class="hljs-number">5.7</span><br></code></pre></td></tr></table></figure><blockquote><p>创建的密码为anjv123<br>mysql数据保存在宿主机的&#x2F;data&#x2F;mysql&#x2F;data中</p></blockquote><br/><h2 id="一键运行php代码"><a href="#一键运行php代码" class="headerlink" title="一键运行php代码"></a>一键运行php代码</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ruby">docker run --name website -v <span class="hljs-string">`pwd`</span><span class="hljs-symbol">:/var/www/html</span> -dp <span class="hljs-number">8000</span><span class="hljs-symbol">:</span><span class="hljs-number">80</span> zevenfang/docker-apache-php7<br></code></pre></td></tr></table></figure><blockquote><p>讲当前文件夹中的php项目通过docker运行，使用8000端口访问</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Docker创建mysql57&quot;&gt;&lt;a href=&quot;#Docker创建mysql57&quot; class=&quot;headerlink&quot; title=&quot;Docker创建mysql57&quot;&gt;&lt;/a&gt;Docker创建mysql57&lt;/h2&gt;&lt;figure class=&quot;highli</summary>
+      
+    
+    
+    
+    
+    <category term="docker" scheme="https://no9ong.github.io/tags/docker/"/>
+    
+    <category term="容器" scheme="https://no9ong.github.io/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>高效的用GitHub搜索开源项目</title>
