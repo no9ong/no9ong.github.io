@@ -16,23 +16,24 @@
   <meta name="author" content="No9ong">
   <meta name="keywords" content="">
   
-    <meta name="description" content="| 在github搜索时，可以通过关键字来限定，让搜索结果更准确。 1.in| 关键字 in 是用来限定搜索的范围 123in:name 在名字中过滤in:readme 在 Readme 中搜索in:description 在简介中搜索   2.stars 、forks| stars（收藏） 和 forks（） 一般是两个比较关系的指标，可以通过 stars 和 forks 条件来过滤高质量的项目">
+    <meta name="description" content="Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git已成为大多数IT企业首选的代码版本控制工具。 常用指令git init  建立新的本地端仓库，–bare 创建裸仓库(一般用于远程库)  git clone [仓库地址]  从远程库中克隆到本地，一般有http和ssh形式：https:&#x2F;&#x2F;github.com&#x2F;no9ong&#x2F;PythonWebFileSe">
 <meta property="og:type" content="article">
-<meta property="og:title" content="高效的用GitHub搜索开源项目">
-<meta property="og:url" content="https://no9ong.github.io/2022/10/20/%E9%AB%98%E6%95%88%E7%9A%84%E7%94%A8GitHub%E6%90%9C%E7%B4%A2%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/index.html">
+<meta property="og:title" content="Git指令记录">
+<meta property="og:url" content="https://no9ong.github.io/2023/10/29/Git%E6%8C%87%E4%BB%A4%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="No9ong&#39;s Blog">
-<meta property="og:description" content="| 在github搜索时，可以通过关键字来限定，让搜索结果更准确。 1.in| 关键字 in 是用来限定搜索的范围 123in:name 在名字中过滤in:readme 在 Readme 中搜索in:description 在简介中搜索   2.stars 、forks| stars（收藏） 和 forks（） 一般是两个比较关系的指标，可以通过 stars 和 forks 条件来过滤高质量的项目">
+<meta property="og:description" content="Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git已成为大多数IT企业首选的代码版本控制工具。 常用指令git init  建立新的本地端仓库，–bare 创建裸仓库(一般用于远程库)  git clone [仓库地址]  从远程库中克隆到本地，一般有http和ssh形式：https:&#x2F;&#x2F;github.com&#x2F;no9ong&#x2F;PythonWebFileSe">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-10-20T12:15:57.000Z">
-<meta property="article:modified_time" content="2022-10-20T12:36:29.448Z">
+<meta property="article:published_time" content="2023-10-29T09:23:00.000Z">
+<meta property="article:modified_time" content="2023-10-29T10:12:42.966Z">
 <meta property="article:author" content="No9ong">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>高效的用GitHub搜索开源项目 - No9ong&#39;s Blog</title>
+  <title>Git指令记录 - No9ong&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -222,7 +223,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="高效的用GitHub搜索开源项目"></span>
+            <span id="subtitle" data-typed-text="Git指令记录"></span>
           
         </div>
 
@@ -233,8 +234,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-10-20 20:15" pubdate>
-          2022年10月20日 晚上
+        <time datetime="2023-10-29 17:23" pubdate>
+          2023年10月29日 下午
         </time>
       </span>
     
@@ -245,7 +246,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          681 字
+          1.4k 字
         
       </span>
     
@@ -256,7 +257,7 @@
         
         
         
-          6 分钟
+          12 分钟
         
       </span>
     
@@ -302,31 +303,75 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">高效的用GitHub搜索开源项目</h1>
+            <h1 style="display: none">Git指令记录</h1>
             
             
               <div class="markdown-body">
                 
-                <p>| 在github搜索时，可以通过关键字来限定，让搜索结果更准确。</p>
-<h2 id="1-in"><a href="#1-in" class="headerlink" title="1.in"></a>1.in</h2><p>| 关键字 in 是用来限定搜索的范围</p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">in:</span>name 在名字中过滤<br><span class="hljs-symbol">in:</span>readme 在 Readme 中搜索<br><span class="hljs-symbol">in:</span>description 在简介中搜索<br></code></pre></td></tr></table></figure>
-
-
-<h2 id="2-stars-、forks"><a href="#2-stars-、forks" class="headerlink" title="2.stars 、forks"></a>2.stars 、forks</h2><p>| stars（收藏） 和 forks（） 一般是两个比较关系的指标，可以通过 stars 和 forks 条件来过滤高质量的项目</p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">in</span>:description Laravel stars:&gt;<span class="hljs-number">1000</span> forks:&gt;<span class="hljs-number">1000</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="3-language-编程语言"><a href="#3-language-编程语言" class="headerlink" title="3.language 编程语言"></a>3.language 编程语言</h2><p>| 我们也能根据编程语言过滤，使用language: </p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">in:</span>description 验证码 language:php<br></code></pre></td></tr></table></figure>
-
-
-<h2 id="4-pushed、created-更新日期、创建日期"><a href="#4-pushed、created-更新日期、创建日期" class="headerlink" title="4.pushed、created 更新日期、创建日期"></a>4.pushed、created 更新日期、创建日期</h2><p>| 们可以使用 pushed、created 来根据时间过滤</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">in:description 验证码 language:php pushed:&gt;2022-10-20 # 过滤大于 2022-10-20之后提交的<br>in:description 验证码 language:php created:&gt;2022-10-02 # 过滤大于 2022-10-02创建的<br></code></pre></td></tr></table></figure>
-
-<h2 id="5-followers-被关注人数"><a href="#5-followers-被关注人数" class="headerlink" title="5.followers 被关注人数"></a>5.followers 被关注人数</h2><p>| 当然我们也可以根据高级搜索来找大佬。比如我们要找在中国区域内，followers 大于 1000 的，并且编程语言是 PHP 的 我们可以这样搜素。</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">followers:&gt;<span class="hljs-number">1000</span> <span class="hljs-keyword">language</span>:PHP <span class="hljs-keyword">location</span>:China<br></code></pre></td></tr></table></figure>
-
-<h2 id="6-限定人或组织"><a href="#6-限定人或组织" class="headerlink" title="6. 限定人或组织"></a>6. 限定人或组织</h2><p>| 在查找某个人或者某个组织的项目时，通过 user 来过滤</p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">user:</span>overtrue<br><span class="hljs-symbol">user:</span>laravel<br></code></pre></td></tr></table></figure>
+                <p>Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。Git已成为大多数IT企业首选的代码版本控制工具。</p>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><p><code>git init</code></p>
+<blockquote>
+<p>建立新的本地端仓库，–bare 创建裸仓库(一般用于远程库)</p>
+</blockquote>
+<p><code>git clone [仓库地址]</code></p>
+<blockquote>
+<p>从远程库中克隆到本地，一般有http和ssh形式：<br><a target="_blank" rel="noopener" href="https://github.com/no9ong/PythonWebFileServer.git">https://github.com/no9ong/PythonWebFileServer.git</a><br><a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;</a>:no9ong&#x2F;PythonWebFileServer.git</p>
+</blockquote>
+<p><code>git status</code></p>
+<blockquote>
+<p>查看git状态</p>
+</blockquote>
+<p><code>git add [文件(夹)]</code></p>
+<blockquote>
+<p>将文件【夹】添加到git缓存区</p>
+</blockquote>
+<p><code>git commit -m [提交说明]</code></p>
+<blockquote>
+<p>将缓存区中的数据提交到库对应分支中</p>
+</blockquote>
+<p><code>git remote add &lt;远程仓库的别名&gt; &lt;远程仓库的URL地址&gt;</code></p>
+<blockquote>
+<p>添加远程仓库，别名一般默认origin</p>
+</blockquote>
+<p><code>git push [origin] [远程分支名]</code></p>
+<blockquote>
+<p>将本地的commit提交到远程分支中</p>
+</blockquote>
+<p><code>git log</code></p>
+<blockquote>
+<p>查看提交记录</p>
+</blockquote>
+<p><code>git reset --hard [HASH]</code></p>
+<blockquote>
+<p>恢复到指定的提交中，HASH可以通过<code>git log</code>查看</p>
+</blockquote>
+<p><code>git merge &lt;分支名称&gt;</code></p>
+<blockquote>
+<p>把指定的分支合并到当前所在的分支下</p>
+</blockquote>
+<h2 id="进阶指令"><a href="#进阶指令" class="headerlink" title="进阶指令"></a>进阶指令</h2><p><code>git branch</code></p>
+<blockquote>
+<ol>
+<li>查看分支：使用git branch命令可以查看当前仓库中存在的所有分支。在分支名前面会有一个*标记，表示当前所在的分支。</li>
+<li>创建分支：使用git branch命令加上分支名可以创建一个新的分支。例如，使用命令<code>git branch new_branch</code>可以创建一个名为new_branch的分支。</li>
+<li>删除分支：使用git branch命令加上-d选项和分支名可以删除指定的分支。例如，使用命令<code>git branch -d branch_name</code>可以删除名为branch_name的分支。</li>
+<li>重命名分支：使用git branch命令加上-m选项和分支名可以重命名指定的分支。例如，使用命令<code>git branch -m new_branch_name</code>可以将当前分支重命名为new_branch_name。</li>
+</ol>
+</blockquote>
+<p><code>git checkout </code></p>
+<blockquote>
+<ol>
+<li>切换分支：使用git checkout可以切换到已经存在的分支。例如，使用命令<code>git checkout branch_name</code>可以切换到名为branch_name的分支。</li>
+<li>创建新分支：使用git checkout命令加上-b选项可以创建并切换到一个新的分支。例如，使用命令<code>git checkout -b new_branch</code>可以创建一个名为new_branch的分支并切换到该分支。</li>
+<li>恢复文件：使用git checkout可以将工作区中的文件恢复到最近一次提交的状态。例如，使用命令<code>git checkout file_name</code>可以将file_name文件恢复到最近一次提交的状态。</li>
+<li>切换到指定的提交：使用git checkout可以将代码库切换到指定的提交。例如，使用命令<code>git checkout commit_id</code>可以将代码库切换到commit_id所对应的提交。这在需要查看或回滚历史提交时非常有用。</li>
+</ol>
+</blockquote>
+<p>参考</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://pythondjango.cn/python/tools/4-git-commands/">https://pythondjango.cn/python/tools/4-git-commands/</a></li>
+<li><a target="_blank" rel="noopener" href="https://hellojs-tw.github.io/git-101/cheat-sheet.html">https://hellojs-tw.github.io/git-101/cheat-sheet.html</a></li>
+</ul>
 
                 
               </div>
@@ -345,7 +390,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/GIT/" class="category-chain-item">GIT</a>
+  <a href="/categories/Linux%E6%8A%98%E8%85%BE/" class="category-chain-item">Linux折腾</a>
   
   
 
@@ -357,6 +402,13 @@
     </div>
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/git/">#git</a>
+      
+    </div>
+  
 </div>
 
 
@@ -365,8 +417,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>高效的用GitHub搜索开源项目</div>
-      <div>https://no9ong.github.io/2022/10/20/高效的用GitHub搜索开源项目/</div>
+      <div>Git指令记录</div>
+      <div>https://no9ong.github.io/2023/10/29/Git指令记录/</div>
     </div>
     <div class="license-meta">
       
@@ -378,7 +430,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年10月20日</div>
+          <div>2023年10月29日</div>
         </div>
       
       
@@ -410,9 +462,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/29/docker%E5%88%9B%E5%BB%BA%E5%B8%B8%E7%94%A8%E5%AE%B9%E5%99%A8/" title="docker创建常用容器">
+                      <a href="/2023/10/29/%E9%AB%98%E6%95%88%E7%9A%84%E7%94%A8GitHub%E6%90%9C%E7%B4%A2%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/" title="高效的用GitHub搜索开源项目">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">docker创建常用容器</span>
+                        <span class="hidden-mobile">高效的用GitHub搜索开源项目</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -420,8 +472,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/18/Docker%E5%8F%82%E6%95%B0%E8%AE%B0%E5%BD%95/" title="Docker参数记录">
-                        <span class="hidden-mobile">Docker参数记录</span>
+                      <a href="/2023/10/29/docker%E5%88%9B%E5%BB%BA%E5%B8%B8%E7%94%A8%E5%AE%B9%E5%99%A8/" title="docker创建常用容器">
+                        <span class="hidden-mobile">docker创建常用容器</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

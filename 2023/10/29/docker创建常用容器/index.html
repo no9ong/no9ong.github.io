@@ -16,15 +16,15 @@
   <meta name="author" content="No9ong">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Docker创建mysql571docker run -d --name mysql -v &#x2F;data&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql -e MYSQL_ROOT_PASSWORD&#x3D;anjv123 -p 3306:3306 mysql:5.7  创建的密码为anjv123mysql数据保存在宿主机的&#x2F;data&#x2F;mysql&#x2F;data中    一键运行">
+    <meta name="description" content="Docker创建mysql571docker run -d --name mysql -v &#x2F;data&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql -e MYSQL_ROOT_PASSWORD&#x3D;anjv123 -p 3306:3306 mysql:5.7   创建的密码为anjv123mysql数据保存在宿主机的&#x2F;data&#x2F;mysql&#x2F;data中    一键运">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker创建常用容器">
 <meta property="og:url" content="https://no9ong.github.io/2023/10/29/docker%E5%88%9B%E5%BB%BA%E5%B8%B8%E7%94%A8%E5%AE%B9%E5%99%A8/index.html">
 <meta property="og:site_name" content="No9ong&#39;s Blog">
-<meta property="og:description" content="Docker创建mysql571docker run -d --name mysql -v &#x2F;data&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql -e MYSQL_ROOT_PASSWORD&#x3D;anjv123 -p 3306:3306 mysql:5.7  创建的密码为anjv123mysql数据保存在宿主机的&#x2F;data&#x2F;mysql&#x2F;data中    一键运行">
+<meta property="og:description" content="Docker创建mysql571docker run -d --name mysql -v &#x2F;data&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql -e MYSQL_ROOT_PASSWORD&#x3D;anjv123 -p 3306:3306 mysql:5.7   创建的密码为anjv123mysql数据保存在宿主机的&#x2F;data&#x2F;mysql&#x2F;data中    一键运">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-29T08:42:00.000Z">
-<meta property="article:modified_time" content="2023-10-29T08:45:56.335Z">
+<meta property="article:modified_time" content="2023-10-29T10:13:06.379Z">
 <meta property="article:author" content="No9ong">
 <meta property="article:tag" content="docker">
 <meta property="article:tag" content="容器">
@@ -310,12 +310,14 @@
               <div class="markdown-body">
                 
                 <h2 id="Docker创建mysql57"><a href="#Docker创建mysql57" class="headerlink" title="Docker创建mysql57"></a>Docker创建mysql57</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">docker run -d --name mysql -v <span class="hljs-regexp">/data/my</span>sql<span class="hljs-regexp">/data:/</span>var<span class="hljs-regexp">/lib/my</span>sql -e MYSQL_ROOT_PASSWORD=anjv123 -p <span class="hljs-number">3306</span>:<span class="hljs-number">3306</span> mysql:<span class="hljs-number">5.7</span><br></code></pre></td></tr></table></figure>
+
 <blockquote>
 <p>创建的密码为anjv123<br>mysql数据保存在宿主机的&#x2F;data&#x2F;mysql&#x2F;data中</p>
 </blockquote>
 <br/>
 
 <h2 id="一键运行php代码"><a href="#一键运行php代码" class="headerlink" title="一键运行php代码"></a>一键运行php代码</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ruby">docker run --name website -v <span class="hljs-string">`pwd`</span><span class="hljs-symbol">:/var/www/html</span> -dp <span class="hljs-number">8000</span><span class="hljs-symbol">:</span><span class="hljs-number">80</span> zevenfang/docker-apache-php7<br></code></pre></td></tr></table></figure>
+
 <blockquote>
 <p>讲当前文件夹中的php项目通过docker运行，使用8000端口访问</p>
 </blockquote>
@@ -326,6 +328,27 @@
             <hr/>
             <div>
               <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Linux%E6%8A%98%E8%85%BE/" class="category-chain-item">Linux折腾</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
   
   
     <div class="post-meta">
@@ -390,12 +413,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2023/10/29/Git%E6%8C%87%E4%BB%A4%E8%AE%B0%E5%BD%95/" title="Git指令记录">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Git指令记录</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/10/20/%E9%AB%98%E6%95%88%E7%9A%84%E7%94%A8GitHub%E6%90%9C%E7%B4%A2%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/" title="高效的用GitHub搜索开源项目">
-                        <span class="hidden-mobile">高效的用GitHub搜索开源项目</span>
+                      <a href="/2022/10/18/Docker%E5%8F%82%E6%95%B0%E8%AE%B0%E5%BD%95/" title="Docker参数记录">
+                        <span class="hidden-mobile">Docker参数记录</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
